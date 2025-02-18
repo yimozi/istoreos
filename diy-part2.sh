@@ -40,6 +40,7 @@ feeds/luci/collections/luci-light/Makefile
 # 修改主机名字，把 iStore OS 修改你喜欢的就行（不能纯数字或者使用中文）
 sed -i 's/192.168.1.1/192.168.2.6/g' package/base-files/files/bin/config_generate
 sed -i 's/OpenWrt/GateWay/g' package/base-files/files/bin/config_generate
+sed -i 's/iStoreOS/GateWay/g' package/istoreos-files/files/etc/board.d/10_system
 
 # 修改root密码，清空登陆时显示的用户名
 sed -i 's|root:::0:99999:7:::|root:\$1\$ULcYq3En\$Hm81ktg4DWEWO7UgSh8Kf.:19975:0:99999:7:::|' package/base-files/files/etc/shadow
